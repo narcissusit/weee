@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	$('.menu_icon').click(function(){
+		$(this).toggleClass('open');
+		$('.main_menu').toggleClass('show');
+		$('body').toggleClass('scroll');
+	});
+	$('.main_menu').click(function(){
+		$('.menu_icon').toggleClass('open');
+		$(this).toggleClass('show');
+		$('body').toggleClass('scroll');
+	})
+});
